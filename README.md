@@ -1,6 +1,6 @@
 # mite
 
-Tiny and fast HTTP GET module for crawling HTML and assets with auto-deflate.
+Tiny and ultra performant HTTP GET module for crawling HTML and assets with auto-deflate using [deflate-stream](https://github.com/bredele/deflate-stream).
 
 ## Installation
 
@@ -13,7 +13,7 @@ npm install mite
 ```ts
 import request, { agent } from "mite";
 
-// Simple GET request - returns stream immediately
+// returns deflated stream
 const stream = request("https://api.example.com");
 
 // Process stream data as it arrives
