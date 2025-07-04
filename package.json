@@ -1,5 +1,5 @@
 {
-  "name": "mite",
+  "name": "@bredele/mite",
   "version": "1.0.0",
   "description": "Tiny and fast HTTP GET module for crawling HTML and assets with auto-deflate.",
   "main": "./dist/cjs/index.js",
@@ -37,6 +37,9 @@
     "cmplr": "^1.1.0"
   },
   "module": "./dist/esm/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
