@@ -1,0 +1,48 @@
+{
+  "name": "mite",
+  "version": "1.0.0",
+  "description": "Tiny and fast HTTP GET module for crawling HTML and assets with auto-deflate.",
+  "main": "./dist/cjs/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "cmplr --type-check",
+    "test": "node --test dist/cjs/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/mite.git"
+  },
+  "keywords": [
+    "crawler",
+    "request",
+    "undici",
+    "get",
+    "html",
+    "assets"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/mite/issues"
+  },
+  "homepage": "https://github.com/bredele/mite#readme",
+  "dependencies": {
+    "deflate-stream": "^1.0.0",
+    "undici": "^6.21.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "cmplr": "^1.1.0"
+  },
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  }
+}
