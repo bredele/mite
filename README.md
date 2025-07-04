@@ -5,13 +5,13 @@ Tiny and ultra performant HTTP GET module for crawling HTML and assets with auto
 ## Installation
 
 ```sh
-npm install mite
+npm install @bredele/mite
 ```
 
 ## Usage
 
 ```ts
-import request, { agent } from "mite";
+import request, { agent } from "@bredele/mite";
 
 // returns deflated stream
 const stream = request("https://api.example.com");
@@ -33,7 +33,7 @@ stream.on("error", (err) => {
 and with connection control:
 
 ```ts
-import request, { agent } from "mite";
+import request, { agent } from "@bredele/mite";
 
 // Use agent for requests
 const stream = request(
